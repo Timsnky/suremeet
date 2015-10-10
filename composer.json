@@ -7,7 +7,9 @@
     "laravel/framework": "4.2.*",
     "laracasts/commander": "~1.0",
     "laracasts/flash": "~1.0",
-    "laracasts/validation": "1.2",
+    "laracasts/validation": "1.2"
+  },
+  "require-dev": {
     "way/generators": "^3.0",
     "codeception/codeception": "~2.0",
     "laracasts/testdummy":"~1.0"
