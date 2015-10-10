@@ -15,6 +15,7 @@ class CreateMeetingsTable extends Migration {
 		Schema::create('meetings', function(Blueprint $table)
 		{
 			$table->increments('id');
+            $table->date('date')->unique();
             $table->string('title');
             $table->text('abstract');
             $table->text('notes');

@@ -20,7 +20,7 @@
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Schedules</a></li>
                 <?php if($currentUser): ?>
-                    <li><a href="#">Register Presentation</a></li>
+                    <li><a href="/register_presentation">Register Presentation</a></li>
                 <?php endif; ?>
             </ul>
 

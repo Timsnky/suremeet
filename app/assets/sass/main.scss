@@ -1,9 +1,9 @@
 body {
-  margin-top: 70px;
+  margin-top: 50px;
   padding: 10px;
 }
 
-.login{
+.form_wrapper {
   max-width: 700px;
   height: 750px;
   padding: {
@@ -18,12 +18,12 @@ body {
   box-shadow: 1px 1px 15px #999999;
 }
 
-.login h1{
+.form_wrapper h1{
   margin-top: 60px;
   text-align: center;
 }
 
-.login img {
+.form_wrapper img {
    max: {
     height: 200px;
      width: 200px;
@@ -32,10 +32,17 @@ body {
   margin: auto auto;
 }
 
-.login .btn {
+.form_wrapper .btn {
   width: 30%;
 }
 
-.login a {
+.form_wrapper a {
   float: right;
+}
+
+.register {
+  @extend .form_wrapper;
+  padding-top: 50px;
+  margin-left: 0;
+  margin-top: 30px;
 }

@@ -1,7 +1,7 @@
 @extends('layouts.template')
 
 @section('content')
-    <div class="login">
+    <div class="form_wrapper">
         <div class="row">
             <div class="col-sm-12">
                 <img src="img/logo.jpg">
