@@ -1,0 +1,87 @@
+<?php $__env->startSection('content'); ?>
+    <div class="login">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="img/logo.jpg">
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <h1>Register</h1>
+            <?php echo $__env->make('layouts.partials.errors', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        </div>
+
+        <?php echo Form::open(['route' => 'signup_path']); ?>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <?php echo Form::label('firstname', 'First Name:'); ?>
+
+                    <?php echo Form::text('firstname', null, ['class' => 'form-control']); ?>
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <?php echo Form::label('lastname', 'Last Name:'); ?>
+
+                    <?php echo Form::text('lastname', null, ['class' => 'form-control']); ?>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <?php echo Form::label('email', 'Email:'); ?>
+
+                    <?php echo Form::text('email', null, ['class' => 'form-control']); ?>
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <?php echo Form::label('organisation', 'Organisation:'); ?>
+
+                    <?php echo Form::text('organisation', null, ['class' => 'form-control']); ?>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <?php echo Form::label('password', 'Password:'); ?>
+
+                    <?php echo Form::password('password', ['class' => 'form-control']); ?>
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <?php echo Form::label('password_confirmation', 'Confirm Password:'); ?>
+
+                    <?php echo Form::password('password_confirmation', ['class' => 'form-control']); ?>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-offset-5">
+            <div class="form-group">
+                <?php echo Form::submit('Sign Up', ['class' => 'btn btn-primary']); ?>
+
+            </div>
+        </div>
+
+        <?php echo Form::close(); ?>
+
+        </div>
+
+    </div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.template', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
