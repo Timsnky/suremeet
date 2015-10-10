@@ -12,6 +12,21 @@
 */
 
 Route::get('/', [
+    'as' => 'home',
+    'uses' => 'HomeController@create'
+]);
+
+Route::get('signup', [
+    'as' => 'signup_path',
+    'uses' => 'SignUpController@create'
+]);
+
+Route::post('signup', [
+    'as' => 'signup_path',
+    'uses' => 'SignUpController@store'
+]);
+
+Route::get('login', [
 	'as' => 'login',
 	'uses' => 'LoginController@create'
 ]);
@@ -21,18 +36,9 @@ Route::post('login', [
 	'uses' => 'LoginController@check'
 ]);
 
-Route::get('signup', [
-	'as' => 'signup_path',
-	'uses' => 'SignUpController@create'
+Route::get('logout', [
+    'as' => 'logout_path',
+    'uses' => 'LoginController@destroy'
 ]);
 
-Route::post('signup', [
-	'as' => 'signup_path',
-	'uses' => 'SignUpController@store'
-]);
-
-Route::get('homepage', [
-	'as' => 'homepage',
-	'uses' => 'HomeController@create'
-]);
 

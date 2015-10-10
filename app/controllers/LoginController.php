@@ -33,7 +33,7 @@ class LoginController extends \BaseController {
         {
             Flash::message("Welcome");
 
-            return Redirect::intended('homepage');
+            return Redirect::intended('/');
         }
         else{
 

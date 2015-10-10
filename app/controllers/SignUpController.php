@@ -45,6 +45,6 @@ class SignUpController extends \BaseController {
 
 		Flash::success('You Have Successfully Logged In');
 
-		return Redirect::to('homepage');
+		return Redirect::home();
 	}
 }
