@@ -1,0 +1,6 @@
+SureMeet\Users\User:
+  firstname: $string
+  lastname: $string
+  email: $string@example.com
+  organisation: $string
+  password: $string

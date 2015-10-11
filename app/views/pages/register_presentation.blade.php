@@ -10,7 +10,7 @@
 
                 <div class="form-group">
                     {{ Form::label('date', 'Meeting Date:') }}
-                    {{ Form::select('date', array('L' => 'Large', 'S' => 'Small'), null,  ['class' => 'form-control']) }}
+                    {{ Form::select('date', $dates, null,  ['class' => 'form-control']) }}
                 </div>
 
                 <div class="form-group">
@@ -25,6 +25,7 @@
 
                 <div class="form-group">
                     {{ Form::label('shareable', 'Allow People to Share: ')}}
+                    {{ Form::hidden('shareable', false) }}
                     {{ Form::checkbox('shareable', true)}}
                 </div>
 

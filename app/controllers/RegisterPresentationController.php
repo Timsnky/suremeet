@@ -19,10 +19,19 @@ class RegisterPresentationController extends \BaseController {
         $this->registerPresentationForm = $registerPresentationForm;
     }
 
+    public function getDates()
+    {
+        return [\Carbon\Carbon::now()->toDateString()=> Carbon::now()->toFormattedDateString(),
+            Carbon::tomorrow()->toDateString() => Carbon::tomorrow()->toFormattedDateString(),
+            Carbon::yesterday()->toDateString() => Carbon::yesterday()->toFormattedDateString()];
+
+    }
+
+
 
     public function create()
     {
-       return View::make('pages.register_presentation');
+        return View::make('pages.register_presentation', array('dates' => $this->getDates()));
     }
 
     /**
@@ -39,7 +48,7 @@ class RegisterPresentationController extends \BaseController {
         $currentUser = Auth::user();
 
         $this->execute(
-          new RegisterPresentationCommand($date, $title, $abstract, $shareable, $currentUser->id)
+          new RegisterPresentationCommand(Carbon::createFromFormat('Y-m-d', $date), $title, $abstract, $shareable, $currentUser->id)
         );
 
         Flash::message("Meeting Saved Successfully");

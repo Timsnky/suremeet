@@ -14,7 +14,7 @@ class LoginController extends \BaseController {
     {
         $this->loginForm = $loginForm;
 
-        $this->beforeFilter(null, ['except' => 'destroy']);
+        $this->beforeFilter('guest', ['except' => 'destroy']);
     }
 
 
