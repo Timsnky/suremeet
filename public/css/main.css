@@ -2,7 +2,7 @@ body {
   margin-top: 50px;
   padding: 10px; }
 
-.form_wrapper, .register {
+.form_wrapper, .register, .settings {
   max-width: 700px;
   height: 750px;
   padding-left: 30px;
@@ -15,23 +15,40 @@ body {
   -webkit-box-shadow: 1px 1px 15px #999999;
           box-shadow: 1px 1px 15px #999999; }
 
-.form_wrapper h1, .register h1 {
+.form_wrapper h1, .register h1, .settings h1 {
   margin-top: 60px;
   text-align: center; }
 
-.form_wrapper img, .register img {
+.form_wrapper img, .register img, .settings img {
   max-height: 200px;
   max-width: 200px;
   display: block;
   margin: auto auto; }
 
-.form_wrapper .btn, .register .btn {
+.form_wrapper .btn, .register .btn, .settings .btn {
   width: 30%; }
 
-.form_wrapper a, .register a {
+.form_wrapper a, .register a, .settings a {
   float: right; }
 
 .register {
   padding-top: 50px;
   margin-left: 0;
   margin-top: 30px; }
+
+.settings {
+  padding-top: 50px;
+  margin-left: 0px; }
+
+.settings h4 {
+  margin-bottom: 50px; }
+
+.nav-stacked {
+  margin-top: 50px;
+  -webkit-box-shadow: 1px 1px 15px #999999;
+          box-shadow: 1px 1px 15px #999999;
+  height: 400px;
+  padding-top: 30px; }
+
+.settings .form-group {
+  width: 300px; }

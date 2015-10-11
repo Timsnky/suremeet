@@ -25,6 +25,7 @@
     ],
     "psr-4": {
       "SureMeet\\": "app/SureMeet"
+
     }
   },
   "scripts": {

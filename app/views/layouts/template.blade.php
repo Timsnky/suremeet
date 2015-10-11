@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>SureMeet</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="container">
     @yield('content')
 </div>
-<script src="//code.jquery.com/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="bower/jquery/dist/jquery.min.js"></script>
+<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -60,4 +60,19 @@ Route::post('register_presentation', [
     'uses' => 'RegisterPresentationController@store'
 ]);
 
+Route::get('schedules', [
+    'as' => 'schedules_path',
+    'uses' => 'SchedulesController@create'
+]);
+
+Route::get('settings', [
+    'as' => 'settings_path',
+    'uses' => 'SettingsController@create'
+]);
+
+Route::get('dashboard', [
+    'as' => 'dashboard_path',
+    'uses' => 'DashboardController@create'
+]);
+
 

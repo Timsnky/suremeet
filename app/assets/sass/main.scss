@@ -46,3 +46,28 @@ body {
   margin-left: 0;
   margin-top: 30px;
 }
+
+.settings {
+  @extend .form_wrapper;
+  padding-top: 50px;
+  margin-left: 0px;
+}
+
+.settings h4
+{
+  margin-bottom: 50px;
+}
+
+
+.nav-stacked {
+  margin-top: 50px;
+  box-shadow: 1px 1px 15px #999999;
+  height: 400px;
+  padding-top: 30px;
+}
+
+.settings .form-group
+{
+  width: 300px;
+}
+
