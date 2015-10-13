@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>SureMeet</title>
@@ -11,14 +11,13 @@
     <script src="bower/jquery/dist/jquery.min.js"></script>
     <script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="bower/angular-smart-table/dist/smart-table.min.js"></script>
 </head>
 <body>
     <div class="container">
         <?php echo $__env->make('layouts.partials.nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         <?php echo $__env->make('flash::message', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         <?php echo $__env->yieldContent('content'); ?>
-
     </div>
-
 </body>
 </html>

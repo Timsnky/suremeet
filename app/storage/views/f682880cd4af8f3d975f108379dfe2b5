@@ -26,7 +26,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false"><?php echo $currentUser->firstname; ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">My Presentations</a></li>
+                            <li><a href="/mypresentations">My Presentations</a></li>
                             <li><a href="/settings">Settings</a> </li>
                             <li role="separator" class="divider"></li>
                             <li><a href="/logout">Logout</a></li>

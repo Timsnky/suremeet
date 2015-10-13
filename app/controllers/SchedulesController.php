@@ -2,6 +2,7 @@
 
 use SureMeet\Settings\Setting;
 use SureMeet\Meetings\Meeting;
+use SureMeet\Users\User;
 
 class SchedulesController extends \BaseController
 {
@@ -16,9 +17,16 @@ class SchedulesController extends \BaseController
     {
         $columns = Setting::where('name' , 'schedules_columns')->first()->setting;
 
-        $meetings = DB::table('meetings')->simplePaginate($columns);
+//        $meeting = Meeting::all()->first();
+//        $user=User::all()->first();
+//
+//        dd($user->meeting->toArray());
+//
+//        dd($meeting->user->toArray() );
 
-        return View::make('pages.schedules', ['meetings' => $meetings]);
+        //$meetings = DB::table('meetings')->simplePaginate($columns);
+
+        //return View::make('pages.schedules', ['meetings' => $meetings]);
         //$currentDate = \Carbon\Carbon::now();
 
 //        if ($columns == 1){

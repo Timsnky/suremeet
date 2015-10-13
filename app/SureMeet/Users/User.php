@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Eloquent;
 use Laracasts\Commander\Events\EventGenerator;
 use SureMeet\SignUp\Events\UserSignedUp;
+use SureMeet\Meetings\Meeting;
 
 
 class User extends Eloquent implements UserInterface, RemindableInterface {
@@ -49,7 +50,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
     public function meeting()
     {
-        return $this->hasMany('Meeting');
+        return $this->hasMany('SureMeet\Meetings\Meeting');
     }
 
 }

@@ -1,6 +1,7 @@
 <?php namespace SureMeet\Meetings ;
 
 use Eloquent;
+use SureMeet\Users\User;
 use Laracasts\Commander\Events\EventGenerator;
 use SureMeet\Meetings\Events\MeetingRegistered;
 
@@ -25,6 +26,6 @@ class Meeting extends Eloquent {
     }
 
     public function user() {
-        return $this->hasOne('User');
+        return $this->belongsTo('SureMeet\Users\User');
     }
 }

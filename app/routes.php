@@ -65,11 +65,29 @@ Route::get('schedules', [
     'uses' => 'SchedulesController@getMeeting'
 ]);
 
-
 Route::get('api/meetings', [
     'uses' => 'SchedulesController@getMeeting'
 ]);
 
+Route::get('mypresentations', [
+    'as' => 'mypresentations_path',
+    'uses' => 'MyPresentationsController@create'
+]);
+
+Route::get('edit_presentations', [
+    'as' => 'edit_presentations',
+    'uses' => 'MyPresentationsController@edit'
+]);
+
+Route::get('add_attachment_presentation', [
+    'as' => 'add_attachment_presentation',
+    'uses' => 'MyPresentationsController@addAttachment'
+]);
+
+Route::get('cancel_presentation', [
+    'as' => 'cancel_presentation',
+    'uses' => 'MyPresentationsController@cancel'
+]);
 
 Route::get('settings', [
     'as' => 'settings_path',

@@ -70,3 +70,8 @@ body {
 
 .schedules {
   margin: 20px; }
+
+.meeting_presentation {
+  border: 1px solid black;
+  -webkit-box-shadow: 1px 1px 15px #999999;
+          box-shadow: 1px 1px 15px #999999; }
