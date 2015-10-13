@@ -62,17 +62,59 @@ Route::post('register_presentation', [
 
 Route::get('schedules', [
     'as' => 'schedules_path',
-    'uses' => 'SchedulesController@create'
+    'uses' => 'SchedulesController@getMeeting'
 ]);
+
+
+Route::get('api/meetings', [
+    'uses' => 'SchedulesController@getMeeting'
+]);
+
 
 Route::get('settings', [
     'as' => 'settings_path',
     'uses' => 'SettingsController@create'
 ]);
 
+Route::post('columns_settings', [
+    'as' => 'columns_settings_path',
+    'uses' => 'SettingsController@setColumns'
+]);
+
+Route::post('frequency_settings', [
+    'as' => 'frequency_settings_path',
+    'uses' => 'SettingsController@setFrequency'
+]);
+
 Route::get('dashboard', [
     'as' => 'dashboard_path',
     'uses' => 'DashboardController@create'
 ]);
+
+Route::post('access_dashboard', [
+    'as' => 'access_dashboard_path',
+    'uses' => 'DashboardController@setAccess'
+]);
+
+Route::post('access_dashboard_search', [
+    'as' => 'access_dashboard_search_path',
+    'uses' => 'DashboardController@searchUser'
+]);
+
+Route::post('reminder_dashboard', [
+    'as' => 'reminder_dashboard_path',
+    'uses' => 'DashboardController@setReminder'
+]);
+
+Route::post('meeting_dashboard_search', [
+    'as' => 'meeting_dashboard_search_path',
+    'uses' => 'DashboardController@searchMeeting'
+]);
+
+Route::post('meeting_dashboard', [
+    'as' => 'meeting_dashboard_path',
+    'uses' => 'DashboardController@setMeetingDate'
+]);
+
 
 

@@ -23,4 +23,8 @@ class Meeting extends Eloquent {
 
         return $meeting;
     }
+
+    public function user() {
+        return $this->hasOne('User');
+    }
 }

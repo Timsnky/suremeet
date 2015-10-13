@@ -21,13 +21,11 @@ class RegisterPresentationController extends \BaseController {
 
     public function getDates()
     {
-        return [\Carbon\Carbon::now()->toDateString()=> Carbon::now()->toFormattedDateString(),
+        return [Carbon::now()->toDateString()=> Carbon::now()->toFormattedDateString(),
             Carbon::tomorrow()->toDateString() => Carbon::tomorrow()->toFormattedDateString(),
             Carbon::yesterday()->toDateString() => Carbon::yesterday()->toFormattedDateString()];
 
     }
-
-
 
     public function create()
     {

@@ -71,3 +71,30 @@ body {
   width: 300px;
 }
 
+.main_table, .main_table tr, .main_table td{
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: auto;
+  height: auto;
+}
+
+.main_table td {
+  padding: 10px;
+  text-align: left;
+
+}
+
+.main_table {
+  width: 100%;
+  box-shadow: 1px 1px 15px #999999;
+}
+
+.schedules {
+  margin: 20px;
+}
+
+
+
+
+
+
