@@ -57,10 +57,17 @@ class MyPresentationsController extends \BaseController {
     public function cancel()
     {
         $meeting_id = Input::get('meeting_id');
+        $meeting =  Meeting::find($meeting_id);
         Meeting::find($meeting_id)->delete();
 
-        Flash::message('Meeting Cancelled Successfully');
-        return Redirect::back();
+        $user = User::where('access_level', 0)->get()->first();
+
+
+        Mail::send('layouts.partials.email', ['meeting' => $meeting] , function($message) use($user){
+            $message->to( $user->email, $user->firstname . ' ' . $user->lastname)->subject("Presentation Cancelled");
+        });
+
+        return Redirect::route('mypresentations_path');
     }
 
     public function addAttachment()

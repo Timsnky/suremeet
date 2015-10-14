@@ -18,7 +18,9 @@
                     <p><b>Notes:</b></p>
                     <p>{{ $meeting->notes }}</p>
                 @endif
-                <p><b>Downloads</b></p>
+                @if(! $meeting->downloads->isEmpty())
+                    <p><b>Downloads</b></p>
+                @endif
                 <ul>
                     @foreach($meeting->downloads as $download)
                         <li>{{ link_to_route('file_downloads_path', $download->name, ['id' => $download->id])}}</li>
