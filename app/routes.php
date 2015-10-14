@@ -60,13 +60,29 @@ Route::post('register_presentation', [
     'uses' => 'RegisterPresentationController@store'
 ]);
 
+
 Route::get('schedules', [
     'as' => 'schedules_path',
-    'uses' => 'SchedulesController@getMeeting'
+    'uses' => 'MeetingDetailsController@create'
 ]);
 
 Route::get('api/meetings', [
     'uses' => 'SchedulesController@getMeeting'
+]);
+
+Route::get('meeting_details', [
+    'as' => 'meeting_details_path',
+    'uses' => 'MeetingDetailsController@create'
+]);
+
+Route::get('file_downloads', [
+    'as' => 'file_downloads_path',
+    'uses' => 'MeetingDetailsController@getDownload'
+]);
+
+Route::post('meeting_details', [
+    'as' => 'addnotes_meeting_details_path',
+    'uses' => 'MeetingDetailsController@addNotes'
 ]);
 
 Route::get('mypresentations', [
@@ -79,9 +95,19 @@ Route::get('edit_presentations', [
     'uses' => 'MyPresentationsController@edit'
 ]);
 
+Route::post('edit_presentations', [
+    'as' => 'edited_presentation_path',
+    'uses' => 'MyPresentationsController@makeEdit'
+]);
+
 Route::get('add_attachment_presentation', [
     'as' => 'add_attachment_presentation',
     'uses' => 'MyPresentationsController@addAttachment'
+]);
+
+Route::post('add_attachment_presentation', [
+    'as' => 'add_attachment_presentation',
+    'uses' => 'MyPresentationsController@uploadAttachment'
 ]);
 
 Route::get('cancel_presentation', [

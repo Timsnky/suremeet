@@ -25,7 +25,13 @@ class Meeting extends Eloquent {
         return $meeting;
     }
 
-    public function user() {
+    public function user()
+    {
         return $this->belongsTo('SureMeet\Users\User');
+    }
+
+    public function downloads()
+    {
+        return $this->hasMany('SureMeet\Downloads\Download');
     }
 }

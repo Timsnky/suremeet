@@ -1,6 +1,5 @@
 <div class="settings">
     <h4>Modify the Access Level for a User</h4>
-    <p> [[ message ]]</p>
     @include('layouts.partials.errors')
 
     @if(isset($userDetails))

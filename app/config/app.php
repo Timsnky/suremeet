@@ -194,5 +194,4 @@ return array(
         'Flash'			  => 'Laracasts\Flash\Flash',
         'Carbon'          => 'Carbon\Carbon'
     ),
-
 );

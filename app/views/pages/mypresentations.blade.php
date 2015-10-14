@@ -3,7 +3,6 @@
 @section('content')
     <table class="main_table">
     @foreach($meetings as $meeting)
-
             <tr>
                 <td>
                     <div class="col-sm-10">

@@ -17,16 +17,11 @@ class SchedulesController extends \BaseController
     {
         $columns = Setting::where('name' , 'schedules_columns')->first()->setting;
 
-//        $meeting = Meeting::all()->first();
-//        $user=User::all()->first();
+        $meetings = Meeting::all()->toArray();
 //
-//        dd($user->meeting->toArray());
-//
-//        dd($meeting->user->toArray() );
+//        $meetings = DB::table('meetings')->simplePaginate($columns);
 
-        //$meetings = DB::table('meetings')->simplePaginate($columns);
-
-        //return View::make('pages.schedules', ['meetings' => $meetings]);
+        return View::make('pages.schedules', ['meetings' => $meetings]);
         //$currentDate = \Carbon\Carbon::now();
 
 //        if ($columns == 1){

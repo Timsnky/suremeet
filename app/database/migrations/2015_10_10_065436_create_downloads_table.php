@@ -18,7 +18,7 @@ class CreateDownloadsTable extends Migration {
             $table->string('name');
             $table->string('path');
             $table->integer('meeting_id')->unsigned();
-            $table->foreign('meeting_id')->references('id')->on('meetings');
+            $table->foreign('meeting_id')->references('id')->on('meetings')->onDelete('cascade');
             $table->timestamps();
 		});
 	}

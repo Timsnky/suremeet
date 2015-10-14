@@ -10,10 +10,6 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/views/pages/dashboard.php" />
-    <file url="file://$PROJECT_DIR$/app/views/pages/settings.php" />
-  </component>
   <component name="ProjectRootManager" version="2" />
   <component name="masterDetails">
     <states>
