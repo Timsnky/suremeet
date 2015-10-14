@@ -51,19 +51,23 @@ Route::get('logout', [
 
 
 Route::get('register_presentation', [
+    'before' => 'auth_new',
     'as' => 'register_presentation_path',
     'uses' => 'RegisterPresentationController@create'
 ]);
 
 Route::post('register_presentation', [
+    'before' => 'auth_new',
     'as' => 'register_presentation_path',
     'uses' => 'RegisterPresentationController@store'
 ]);
 
-
+/*
+ *Route to the schedules form
+ */
 Route::get('schedules', [
     'as' => 'schedules_path',
-    'uses' => 'MeetingDetailsController@create'
+    'uses' => 'SchedulesController@create'
 ]);
 
 Route::get('api/meetings', [

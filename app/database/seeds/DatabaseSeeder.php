@@ -3,6 +3,8 @@
 use SureMeet\Settings\Setting;
 use SureMeet\Meetings\Meeting;
 use Faker\Factory as Faker;
+use Carbon\Carbon;
+use SureMeet\MeetingDates\MeetingDate;
 
 class DatabaseSeeder extends Seeder {
 
@@ -24,7 +26,7 @@ class SettingsTableSeeder extends Seeder
     public function run()
     {
         DB::table('settings')->delete();
-        Setting::create(array('name' => 'meeting_frequency', 'setting' => 7));
+        Setting::create(array('name' => 'meeting_frequency', 'setting' => 1));
         Setting::create(array('name' => 'schedules_columns', 'setting' => 3));
         Setting::create(array('name' => 'reminder_days', 'setting' => 3));
 
@@ -38,6 +40,16 @@ class SettingsTableSeeder extends Seeder
                 'abstract' => $faker->text(),
                 'user_id' => 1
             ]);
+        }
+
+        DB::table('meeting_dates')->delete();
+        $frequency = Setting::where('name', 'meeting_frequency')->first()->setting;
+        $currentDate = Carbon::now();
+        MeetingDate::create(['date' => $currentDate]);
+        for($i = 0; $i < 10 ; $i ++)
+        {
+            $currentDate = $currentDate->addDays($frequency * 7);
+            MeetingDate::create(['date' => $currentDate]);
         }
     }
 }

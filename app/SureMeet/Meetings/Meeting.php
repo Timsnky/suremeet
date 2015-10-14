@@ -2,6 +2,7 @@
 
 use Eloquent;
 use SureMeet\Users\User;
+use SureMeet\Tags\Tag;
 use Laracasts\Commander\Events\EventGenerator;
 use SureMeet\Meetings\Events\MeetingRegistered;
 
@@ -33,5 +34,10 @@ class Meeting extends Eloquent {
     public function downloads()
     {
         return $this->hasMany('SureMeet\Downloads\Download');
+    }
+
+    public function tags()
+    {
+        return $this->hasMany('SureMeet\Tags\MeetingTag');
     }
 }

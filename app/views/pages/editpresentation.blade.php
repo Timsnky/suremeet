@@ -31,6 +31,11 @@
                 </div>
 
                 <div class="form-group">
+                    {{ Form::label('tag', 'Tags:') }}
+                    {{ Form::text('tag', @foreach($meeting->tags-), ['placeholder' => 'please separate the tags with a ; ie tag;tag','class' => 'form-control']) }}
+                </div>
+
+                <div class="form-group">
                     {{ Form::hidden('id', $meeting->id) }}
                     {{ Form::submit('Save', ['class' => 'btn btn-primary'])}}
                 </div>

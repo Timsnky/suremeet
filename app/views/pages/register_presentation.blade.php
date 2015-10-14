@@ -30,6 +30,11 @@
                 </div>
 
                 <div class="form-group">
+                    {{ Form::label('tag', 'Tags:') }}
+                    {{ Form::text('tag', null, ['placeholder' => 'please separate the tags with a ; ie tag;tag','class' => 'form-control']) }}
+                </div>
+
+                <div class="form-group">
                     {{ Form::submit('Save', ['class' => 'btn btn-primary'])}}
                 </div>
 

@@ -7,8 +7,7 @@ class MeetingDetailsController extends \BaseController {
 
 	public function create()
     {
-        //$meeting_id = Input::get('meeting_id');
-        $meeting_id = 86;
+        $meeting_id = Input::get('meeting_id');
         $meeting = Meeting::find($meeting_id);
         return View::make('pages.meetingdetails', ['meeting' => $meeting]);
     }

@@ -40,7 +40,16 @@ schedulesApp.controller('columnsController', function($scope, $http, Meeting) {
     Meeting.get()
         .then(function(response){
            $scope.meetings = response.data;
+            console.log($scope.meetings);
         });
+
+    //var meeting = [];
+    //meeting = angular.fromJson(#scope.meetings);
+    ////var meetingsArray = $scope.meetings;
+    //console.log($scope.meetings);
+    //angular.forEach($scope.meetings, function(item){
+    //    console.log(item.date);
+    //})
 });
 
 schedulesApp.controller('listController', function($scope) {

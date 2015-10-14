@@ -1,7 +1,6 @@
 <div class="schedules">
-    <p> [[ message ]]</p>
     <div ng-repeat = "meeting in meetings">
-        <p>[[ meeting ]]</p>
+        [[ meeting ]]
     </div>
     <table>
         <tr>

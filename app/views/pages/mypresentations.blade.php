@@ -11,8 +11,8 @@
                     </div>
                     <div class="col-sm-2">
                         <p>{{ link_to_route('edit_presentations', 'Edit', ['meeting_id' => $meeting->id] ) }}</p>
-                        <p>{{ link_to_action('cancel_presentation', 'Cancel', ['meeting_id' => $meeting->id] ) }} </p>
-                        <p> {{ link_to_action('add_attachment_presentation', 'Add Attachment', ['meeting_id' => $meeting->id] ) }}</p>
+                        <p>{{ link_to_route('cancel_presentation', 'Cancel', ['meeting_id' => $meeting->id] ) }} </p>
+                        <p> {{ link_to_route('add_attachment_presentation', 'Add Attachment', ['meeting_id' => $meeting->id] ) }}</p>
                     </div>
                 </td>
             </tr>

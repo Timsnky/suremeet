@@ -12,17 +12,17 @@
         </tr>
         <tr>
             <td>
-                <b>Speaker Name:</b> {{ $meeting->title }}
+                <b>Speaker Name:</b> {{ $meeting->user->firstname . ' ' . $meeting->user->lastname}}
             </td>
         </tr>
         <tr>
             <td>
-                <b>Organization:</b> {{ $meeting->title }}
+                <b>Organization:</b> {{ $meeting->user->organisation }}
             </td>
         </tr>
         <tr>
             <td>
-                <b>Speaker Email:</b> {{ $meeting->title }}
+                <b>Speaker Email:</b> {{ $meeting->user->email }}
             </td>
         </tr>
         <tr>
