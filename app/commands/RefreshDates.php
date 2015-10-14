@@ -3,6 +3,8 @@
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
+use Carbon\Carbon;
+use SureMeet\MeetingDates\MeetingDate;
 
 class RefreshDates extends Command {
 
@@ -37,7 +39,15 @@ class RefreshDates extends Command {
 	 */
 	public function fire()
 	{
-        $currentDate = C
+        $currentDate = Carbon::now();
+
+        $lastFreeDate = Carbon::createFromFormat('Y-m-d',
+            MeetingDate::orderBy('date', 'asc')->get()->last()->date
+        );
+
+        $lastMeetingDate = Carbon::createFromFormat('Y-m-d',
+            Meeting::orderBy('date', 'asc')->get()->last()->date
+        );
 
 	}
 

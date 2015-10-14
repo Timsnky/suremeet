@@ -17,25 +17,6 @@ class SchedulesController extends \BaseController
     {
         $columns = Setting::where('name' , 'schedules_columns')->first()->setting;
 
-//        $meetings = Meeting::all()->toArray();
-//        dd($meetings);
-//
-//        $meetings = DB::table('meetings')->simplePaginate($columns);
-//
-//        return View::make('pages.schedules', ['meetings' => $meetings]);
-//        $currentDate = \Carbon\Carbon::now();
-//
-//        if ($columns == 1){
-//            $higherDate = Meeting::where('date', '>', $currentDate)->take(3)->get();
-//            return Response::json($higherDate);
-//        }
-//        $higherDate = Meeting::where('date', '<', $currentDate)->orderBy('date', 'desc')->take(2)->get()
-//        $meetings = Meeting::where('user_id', 1)->skip(1)->get();
-//        $higherDate;
-//        dd($higherDate);
-//
-//        $lowerDate = Meeting::orderBy('date', '')->where('date', '<', $higherDate)->take(5)->get();
-//        $higherDate = $higherDate->toArray();
         return Response::json(Meeting::all());
     }
 }

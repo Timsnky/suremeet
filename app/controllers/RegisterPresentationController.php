@@ -71,6 +71,8 @@ class RegisterPresentationController extends \BaseController {
 
     public function updateDate()
     {
+        $deletedDate = Carbon::createFromFormat('Y-m-d', Input::get('date'));
+
         MeetingDate::where('date',Input::get('date'))->delete();
 
         $lastDate = MeetingDate::orderBy('date', 'asc')->get()->last()->date;
@@ -79,7 +81,15 @@ class RegisterPresentationController extends \BaseController {
 
         $frequency = Setting::where('name', 'meeting_frequency')->first()->setting;
 
-        $newDate = $lastDate->addDays($frequency * 7);
+        if($deletedDate > $lastDate)
+        {
+            $newDate = $deletedDate->addDays($frequency * 7);
+        }
+        else
+        {
+            $newDate = $lastDate->addDays($frequency * 7);
+
+        }
 
         MeetingDate::create(['date' => $newDate]);
     }

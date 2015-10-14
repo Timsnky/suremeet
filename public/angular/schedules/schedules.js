@@ -27,7 +27,7 @@ schedulesApp.config(['$routeProvider', function($routeProvider) {
         }).
 
         otherwise({
-            redirectTo: '/columns'
+            redirectTo: '/list'
         });
 }]);
 
