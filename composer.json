@@ -12,7 +12,6 @@
     "thujohn/share": "dev-master"
   },
   "require-dev": {
-    "way/generators": "^3.0",
     "codeception/codeception": "~2.0",
     "laracasts/testdummy":"~1.0"
   },

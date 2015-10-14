@@ -68,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/settings/frequency.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.35958904">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -87,11 +87,21 @@
       <file leaf-file-name="MeetingDetailsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/MeetingDetailsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            <state vertical-scroll-proportion="-23.75">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <element signature="e#7#37#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.6666665">
+              <caret line="155" column="32" selection-start-line="155" selection-start-column="32" selection-end-line="155" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,8 +150,6 @@
         <option value="$PROJECT_DIR$/app/SureMeet/Meetings/Meeting.php" />
         <option value="$PROJECT_DIR$/app/assets/sass/main.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/partials/dashboard/access.blade.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/MeetingDetailsController.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/partials/nav.blade.php" />
@@ -151,6 +159,8 @@
         <option value="$PROJECT_DIR$/app/controllers/MyPresentationsController.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/partials/email.blade.php" />
         <option value="$PROJECT_DIR$/app/views/pages/meetingdetails.blade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/partials/settings/frequency.blade.php" />
       </list>
     </option>
@@ -261,107 +271,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SureMeet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SureMeet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SureMeet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SureMeet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SureMeet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SureMeet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SureMeet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SureMeet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="settings" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -375,7 +285,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laravel" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="laravel.log&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/storage/logs/laravel.log&#10;mail&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/config/mail.php&#10;add&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/addattachment.blade.php&#10;regi&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/register_presentation.blade.php&#10;app&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/config/app.php&#10;m&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/controllers/MyPresentationsController.php&#10;mee&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/SureMeet/Meetings/Meeting.php&#10;edi&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/editpresentation.blade.php&#10;registerpre&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/controllers/RegisterPresentationController.php&#10;My&#9;null&#9;null&#10;ROU&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/routes.php&#10;da&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/controllers/DashboardController.php&#10;rou&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/routes.php&#10;acc&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/layouts/partials/dashboard/access.blade.php&#10;das&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/public/angular/dashboard/dashboardControllers.js&#10;dash&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/dashboard.blade.php&#10;access&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/layouts/partials/dashboard/access.blade.php&#10;SET&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/controllers/SettingsController.php&#10;SETT&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/public/angular/settings/settingsControllers.js&#10;ro&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/routes.php&#10;co&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/layouts/partials/settings/columns.blade.php&#10;sett&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/settings.blade.php&#10;lo&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/controllers/LoginController.php&#10;reg&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/register_presentation.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="ap&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/config/local/app.php&#10;app&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/config/local/app.php&#10;laravel.log&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/storage/logs/laravel.log&#10;mail&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/config/mail.php&#10;add&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/addattachment.blade.php&#10;regi&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/register_presentation.blade.php&#10;m&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/controllers/MyPresentationsController.php&#10;mee&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/SureMeet/Meetings/Meeting.php&#10;edi&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/editpresentation.blade.php&#10;registerpre&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/controllers/RegisterPresentationController.php&#10;My&#9;null&#9;null&#10;ROU&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/routes.php&#10;da&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/controllers/DashboardController.php&#10;rou&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/routes.php&#10;acc&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/layouts/partials/dashboard/access.blade.php&#10;das&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/public/angular/dashboard/dashboardControllers.js&#10;dash&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/dashboard.blade.php&#10;access&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/layouts/partials/dashboard/access.blade.php&#10;SET&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/controllers/SettingsController.php&#10;SETT&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/public/angular/settings/settingsControllers.js&#10;ro&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/routes.php&#10;co&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/layouts/partials/settings/columns.blade.php&#10;sett&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/settings.blade.php&#10;lo&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/controllers/LoginController.php&#10;reg&#9;FILE&#9;file:///Users/interntwo/laravel_projects/SureMeet/app/views/pages/register_presentation.blade.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -466,6 +376,27 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896176" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30643404" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28097063" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715377" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -729,22 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25684932">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79452056">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05202312">
@@ -820,14 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/register_presentation.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7962329">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="33" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/mail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5895954">
@@ -855,14 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/local/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.2916665">
@@ -877,16 +776,6 @@
           <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
             <element signature="e#7#31#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/MeetingDetailsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#7#37#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -907,6 +796,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/register_presentation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3468208">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/settings/columns.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
@@ -915,10 +812,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/local/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/MeetingDetailsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.75">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#37#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6666665">
+          <caret line="155" column="32" selection-start-line="155" selection-start-column="32" selection-end-line="155" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66780823">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/settings/frequency.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35958904">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
           <folding />
         </state>
       </provider>
