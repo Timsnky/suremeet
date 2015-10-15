@@ -25,7 +25,7 @@ class MyPresentationsController extends \BaseController {
     public function create()
     {
         $user = User::where('id', Auth::user()->id)->first();
-        $meetings = $user->meeting()->get();
+        $meetings = $user->meeting()->simplePaginate(7);
         if($meetings->isEmpty())
         {
             Flash::message("You have not registered for a presentation");

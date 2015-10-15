@@ -18,4 +18,5 @@
             </tr>
     @endforeach
     </table>
+    {{ $meetings->links() }}
 @stop

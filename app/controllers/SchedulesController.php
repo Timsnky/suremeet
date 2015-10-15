@@ -9,7 +9,7 @@ class SchedulesController extends \BaseController
     public function create()
     {
         $columns = Setting::where('name' , 'schedules_columns')->first()->setting;
-        $meetings = Meeting::all();
+        $meetings = Meeting::simplePaginate(7);
         return View::make('pages.schedules', ['columns' => $columns, 'meetings' => $meetings]);
     }
 
