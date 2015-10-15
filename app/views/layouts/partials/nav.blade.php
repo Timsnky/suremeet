@@ -29,7 +29,7 @@
                            aria-expanded="false">{{ $currentUser->firstname }}<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="/mypresentations">My Presentations</a></li>
-                            @if($currentUser->access_level < 2)
+                            @if($currentUser->access_level == 1)
                                 <li><a href="/settings">Settings</a> </li>
                             @endif
                             <li role="separator" class="divider"></li>

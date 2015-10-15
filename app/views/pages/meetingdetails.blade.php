@@ -26,7 +26,7 @@
                         <li>{{ link_to_route('file_downloads_path', $download->name, ['id' => $download->id])}}</li>
                     @endforeach
                 </ul>
-                @if($currentUser->access_level < 2)
+                @if(isset($currentUser) && $currentUser->access_level < 2)
                     <h4>Add Notes for the Presentation</h4>
                     {{ Form::open(['route' => 'addnotes_meeting_details_path']) }}
                     <div class="form-group">
