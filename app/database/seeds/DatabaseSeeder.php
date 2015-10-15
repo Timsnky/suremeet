@@ -30,17 +30,17 @@ class SettingsTableSeeder extends Seeder
         Setting::create(array('name' => 'schedules_columns', 'setting' => 3));
         Setting::create(array('name' => 'reminder_days', 'setting' => 3));
 
-        DB::table('meetings')->delete();
-        $faker = Faker::create();
-        foreach(range(1,20) as $index)
-        {
-            Meeting::create([
-               'date' => $faker->dateTimeBetween('-1 years', '1 years'),
-                'title' => $faker->word,
-                'abstract' => $faker->text(),
-                'user_id' => 1
-            ]);
-        }
+//        DB::table('meetings')->delete();
+//        $faker = Faker::create();
+//        foreach(range(1,20) as $index)
+//        {
+//            Meeting::create([
+//               'date' => $faker->dateTimeBetween('-1 years', '1 years'),
+//                'title' => $faker->word,
+//                'abstract' => $faker->text(),
+//                'user_id' => 1
+//            ]);
+//        }
 
         DB::table('meeting_dates')->delete();
         $frequency = Setting::where('name', 'meeting_frequency')->first()->setting;

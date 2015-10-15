@@ -33,5 +33,7 @@ class MeetingDetailsController extends \BaseController {
     public function addNotes()
     {
         Meeting::find(Input::get('id'))->update(['notes' => Input::get('notes')]);
+
+        return Redirect::to('schedules');
     }
 }
