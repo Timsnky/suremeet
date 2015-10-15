@@ -5,7 +5,7 @@ $I->wantTo('Register to Make a Presentation');
 $I->amOnPage('/register_presentation');
 
 
-$I->selectOption('date', 'Oct 12, 2015');
+$I->selectOption('date');
 $I->fillField('Title:', 'Computer');
 $I->fillField('Abstract:', 'Technology');
 $I->click('Save');

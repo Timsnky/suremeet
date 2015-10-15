@@ -2,6 +2,7 @@
 
 use SureMeet\Settings\Setting;
 use SureMeet\Meetings\Meeting;
+use SureMeet\Users\User;
 use Faker\Factory as Faker;
 use Carbon\Carbon;
 use SureMeet\MeetingDates\MeetingDate;
@@ -51,5 +52,14 @@ class SettingsTableSeeder extends Seeder
             $currentDate = $currentDate->addDays($frequency * 7);
             MeetingDate::create(['date' => $currentDate]);
         }
+
+        User::create(array(
+            'firstname' => 'Michael',
+            'lastname' => 'Wamae',
+            'email' => 'mwamae@cytonn.com',
+            'organisation' => 'Cytonn',
+            'access_level' => 0,
+            'password' => '1234'
+        ));
     }
 }

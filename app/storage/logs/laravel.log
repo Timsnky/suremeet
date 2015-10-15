@@ -1,1 +1,48 @@
 [2015-10-15 06:32:17] local.INFO: SureMeet.Meetings.Events.MeetingRegistered was fired. [] []
+[2015-10-15 07:46:19] testing.INFO: SureMeet.SignUp.Events.UserSignedUp was fired. [] []
+[2015-10-15 07:46:19] testing.INFO: SureMeet.SignUp.Events.UserSignedUp was fired. [] []
+[2015-10-15 07:48:02] testing.INFO: SureMeet.SignUp.Events.UserSignedUp was fired. [] []
+[2015-10-15 07:48:02] testing.INFO: SureMeet.SignUp.Events.UserSignedUp was fired. [] []
+[2015-10-15 08:04:30] local.ERROR: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`suremeet`.`meetings`, CONSTRAINT `meetings_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`))' in /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Connection.php:391
+Stack trace:
+#0 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): PDOStatement->execute(Array)
+#1 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(617): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'delete from `us...', Array)
+#2 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(581): Illuminate\Database\Connection->runQueryCallback('delete from `us...', Array, Object(Closure))
+#3 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(394): Illuminate\Database\Connection->run('delete from `us...', Array, Object(Closure))
+#4 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(351): Illuminate\Database\Connection->affectingStatement('delete from `us...', Array)
+#5 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1977): Illuminate\Database\Connection->delete('delete from `us...', Array)
+#6 /home/vagrant/Code/SureMeet/app/database/seeds/DatabaseSeeder.php(55): Illuminate\Database\Query\Builder->delete()
+#7 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(37): SettingsTableSeeder->run()
+#8 /home/vagrant/Code/SureMeet/app/database/seeds/DatabaseSeeder.php(20): Illuminate\Database\Seeder->call('SettingsTableSe...')
+#9 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Console/SeedCommand.php(57): DatabaseSeeder->run()
+#10 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Console/Command.php(112): Illuminate\Database\Console\SeedCommand->fire()
+#11 /home/vagrant/Code/SureMeet/vendor/symfony/console/Symfony/Component/Console/Command/Command.php(253): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Console/Command.php(100): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/vagrant/Code/SureMeet/vendor/symfony/console/Symfony/Component/Console/Application.php(889): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/vagrant/Code/SureMeet/vendor/symfony/console/Symfony/Component/Console/Application.php(193): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/vagrant/Code/SureMeet/vendor/symfony/console/Symfony/Component/Console/Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/vagrant/Code/SureMeet/artisan(59): Symfony\Component\Console\Application->run()
+#17 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`suremeet`.`meetings`, CONSTRAINT `meetings_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)) (SQL: delete from `users`)' in /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Connection.php:625
+Stack trace:
+#0 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(581): Illuminate\Database\Connection->runQueryCallback('delete from `us...', Array, Object(Closure))
+#1 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(394): Illuminate\Database\Connection->run('delete from `us...', Array, Object(Closure))
+#2 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(351): Illuminate\Database\Connection->affectingStatement('delete from `us...', Array)
+#3 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1977): Illuminate\Database\Connection->delete('delete from `us...', Array)
+#4 /home/vagrant/Code/SureMeet/app/database/seeds/DatabaseSeeder.php(55): Illuminate\Database\Query\Builder->delete()
+#5 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(37): SettingsTableSeeder->run()
+#6 /home/vagrant/Code/SureMeet/app/database/seeds/DatabaseSeeder.php(20): Illuminate\Database\Seeder->call('SettingsTableSe...')
+#7 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Database/Console/SeedCommand.php(57): DatabaseSeeder->run()
+#8 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Console/Command.php(112): Illuminate\Database\Console\SeedCommand->fire()
+#9 /home/vagrant/Code/SureMeet/vendor/symfony/console/Symfony/Component/Console/Command/Command.php(253): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /home/vagrant/Code/SureMeet/vendor/laravel/framework/src/Illuminate/Console/Command.php(100): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /home/vagrant/Code/SureMeet/vendor/symfony/console/Symfony/Component/Console/Application.php(889): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/vagrant/Code/SureMeet/vendor/symfony/console/Symfony/Component/Console/Application.php(193): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/vagrant/Code/SureMeet/vendor/symfony/console/Symfony/Component/Console/Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/vagrant/Code/SureMeet/artisan(59): Symfony\Component\Console\Application->run()
+#15 {main} [] []
+[2015-10-15 08:04:58] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'User' not found' in /home/vagrant/Code/SureMeet/app/database/seeds/DatabaseSeeder.php:55
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
