@@ -7,6 +7,7 @@ use SureMeet\Forms\UserEmailForm;
 use SureMeet\Users\User;
 use SureMeet\Forms\ReminderDaysForm;
 use SureMeet\Settings\Setting;
+use Carbon\Carbon;
 
 
 class DashboardController extends \BaseController {

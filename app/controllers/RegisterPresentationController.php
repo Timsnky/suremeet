@@ -7,8 +7,8 @@ use SureMeet\Tags\Tag;
 use SureMeet\Tags\MeetingTag;
 use SureMeet\Meetings\Meeting;
 use SureMeet\MeetingDates\MeetingDate;
-use Carbon\Carbon;
 use SureMeet\Settings\Setting;
+use Carbon\Carbon;
 
 class RegisterPresentationController extends \BaseController {
 

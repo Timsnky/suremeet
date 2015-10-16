@@ -29,13 +29,10 @@ dashboardApp.config(['$routeProvider', function($routeProvider) {
 }]);
 
 dashboardApp.controller('accessController', function($scope) {
-    $scope.message ="form-group";
 });
 
 dashboardApp.controller('reminderController', function($scope) {
-    $scope.message ="Hellvzsdfvdfvxdfvdvf";
 });
 
 dashboardApp.controller('meetingController', function($scope) {
-    $scope.message ="fdbdfbxHellvzdvf";
 });

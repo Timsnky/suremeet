@@ -306,3 +306,12 @@ Stack trace:
 #17 /home/vagrant/Code/SureMeet/public/index.php(49): Illuminate\Foundation\Application->run()
 #18 {main} [] []
 [2015-10-15 09:16:27] local.INFO: SureMeet.Meetings.Events.MeetingRegistered was fired. [] []
+[2015-10-16 05:03:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Carbon' not found' in /home/vagrant/Code/SureMeet/app/controllers/RegisterPresentationController.php:56
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-16 05:08:11] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Carbon' not found' in /home/vagrant/Code/SureMeet/app/controllers/RegisterPresentationController.php:57
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-16 05:08:41] local.INFO: SureMeet.Meetings.Events.MeetingRegistered was fired. [] []

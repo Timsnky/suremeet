@@ -1858,59 +1858,6 @@
         ]
     },
     {
-        "name": "guzzlehttp/promises",
-        "version": "1.0.2",
-        "version_normalized": "1.0.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/guzzle/promises.git",
-            "reference": "97fe7210def29451ec74923b27e552238defd75a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/guzzle/promises/zipball/97fe7210def29451ec74923b27e552238defd75a",
-            "reference": "97fe7210def29451ec74923b27e552238defd75a",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "~4.0"
-        },
-        "time": "2015-08-15 19:37:21",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "GuzzleHttp\\Promise\\": "src/"
-            },
-            "files": [
-                "src/functions_include.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Michael Dowling",
-                "email": "mtdowling@gmail.com",
-                "homepage": "https://github.com/mtdowling"
-            }
-        ],
-        "description": "Guzzle promises library",
-        "keywords": [
-            "promise"
-        ]
-    },
-    {
         "name": "guzzlehttp/guzzle",
         "version": "6.1.0",
         "version_normalized": "6.1.0.0",
@@ -3283,28 +3230,31 @@
     },
     {
         "name": "nesbot/carbon",
-        "version": "1.0.0",
-        "version_normalized": "1.0.0.0",
+        "version": "1.17.0",
+        "version_normalized": "1.17.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/briannesbitt/Carbon.git",
-            "reference": "d59535c3175d1188baea460bd7772d41ea227b56"
+            "reference": "a1dd1ad9abfc8b3c4d8768068e6c71d293424e86"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d59535c3175d1188baea460bd7772d41ea227b56",
-            "reference": "d59535c3175d1188baea460bd7772d41ea227b56",
+            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/a1dd1ad9abfc8b3c4d8768068e6c71d293424e86",
+            "reference": "a1dd1ad9abfc8b3c4d8768068e6c71d293424e86",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2012-09-11 02:21:48",
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2015-03-08 14:05:44",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
             "psr-0": {
-                "Carbon": "."
+                "Carbon": "src"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -3319,11 +3269,64 @@
             }
         ],
         "description": "A simple API extension for DateTime.",
-        "homepage": "https://github.com/briannesbitt/Carbon",
+        "homepage": "http://carbon.nesbot.com",
         "keywords": [
             "date",
             "datetime",
             "time"
+        ]
+    },
+    {
+        "name": "guzzlehttp/promises",
+        "version": "1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/promises.git",
+            "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/promises/zipball/b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+            "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2015-10-15 22:28:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GuzzleHttp\\Promise\\": "src/"
+            },
+            "files": [
+                "src/functions_include.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "Guzzle promises library",
+        "keywords": [
+            "promise"
         ]
     }
 ]
